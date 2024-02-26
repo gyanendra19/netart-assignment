@@ -1,0 +1,211 @@
+body{
+  margin: 0;
+}
+
+.main{
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(176deg, rgba(251,246,246,1) 28%, rgba(246,244,179,1) 43%);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+
+  img{
+    height: 100px;
+  }
+}
+
+.award{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+  .big-award{
+    img{
+      height: 700px;
+    }
+  }
+
+  
+  .award-para{
+    width: 66%;
+
+    .top-award{
+      font-weight: 600;
+    }
+
+    .award-photo{
+      img{
+        height: 480px;
+      }
+    }
+
+    span{
+      font-weight: 600;
+    }
+  }
+
+}
+
+.second{
+  margin-top: 40px;
+  .installed{
+    width: 96%;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .last-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid red;
+    margin:  0 13px;
+
+    img{
+      width: 80%;
+      height: 380px;
+      margin: auto;
+    }
+
+    h5{
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+}
+
+.fluid-para{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+
+
+  .chemical{
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-weight: 600;
+
+    span{
+      color: red;
+      font-weight: 700;
+    }
+  }
+}
+
+.footer{
+  height: 120px;
+  background-color: rgb(245, 37, 37);
+  margin: 25px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  
+  div{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 712px) {
+  .main{
+    width: 100%;
+  }
+  
+  .award{
+    flex-direction: column;
+  }
+
+  .logo img{
+    height: 70px;
+    // margin-left: -60px;
+  }
+
+  .award .big-award img {
+    height: 470px;
+    margin-left: 30px;
+}
+
+  .award .award-para .award-photo img{
+    height: 190px;
+  }
+
+  .top-award{
+    margin-left: 20px;
+  }
+
+  ul{
+    width: 120%;
+  }
+
+  .award-para p{
+    width: 130%;
+    margin-left: 20px;
+  }
+
+  .second .installed{
+    width: 90%;
+    line-height: 21px;
+  }
+
+  .second .last-image{
+    width: 95%;
+    display: block;
+  }
+
+  .second .last-image img{
+    width: 95%;
+    height: 200px;
+  }
+
+  .second .last-image h5 {
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.fluid-para{
+  width: 100%;
+  padding: 0;
+}
+
+.fluid-para h4{
+  text-align: center;
+  padding-left: 10px;
+}
+
+.fluid-para .chemical{
+  width: 90%;
+}
+
+.footer{
+  width: 92%;
+  flex-direction: column;
+  height: 180px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer div{
+  height: 20%;
+}
+
+}
+
